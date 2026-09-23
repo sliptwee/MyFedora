@@ -1,0 +1,49 @@
+{
+  "logo": {
+    "type": "file",
+    "source": "/home/tema/.config/fastfetch/ASCII/Tema.txt",
+    "color": {
+      "1": "#FFFFFF"
+    },
+    "padding": {
+      "top": 0,
+      "right": 4,
+      "bottom": 2
+    }
+  },
+  "display": {
+    "separator": " "
+  },
+  "modules": [
+    "break",
+    {
+      "type": "os",
+      "key": "OS   > ",
+      "format": "...",
+      "keyColor": "#FFFFFF",
+      "color": "#FFFFFF"
+    },
+    {
+      "type": "host",
+      "key": "PC   > ",
+      "keyColor": "#FFFFFF",
+      "color": "#FFFFFF",
+      "format": "..."
+    },
+    {
+      "type": "cpu",
+      "key": "CPU  > ",
+      "keyColor": "#FFFFFF",
+      "color": "#FFFFFF",
+      "format": "..."
+    },
+    {
+      "type": "gpu",
+      "key": "GPU  > ",
+      "keyColor": "#FFFFFF",
+      "color": "#FFFFFF",
+      "format": "..."
+    },
+    "break"
+  ]
+}
