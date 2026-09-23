@@ -28,9 +28,15 @@ clear
 echo "// Copying Custom Configurations"
 echo
 
-sudo rsync -a ~/Downloads/MyFedora-main/Files/ ~/
-sudo cp ~/Downloads/MyFedora-main/Files/Pictures/Avatar.png /var/lib/AccountsService/icons/
+# sudo rsync -a ~/Downloads/MyFedora-main/Files/ ~/
+# sudo cp ~/Downloads/MyFedora-main/Files/Pictures/Avatar.png /var/lib/AccountsService/icons/
+# sudo mv /var/lib/AccountsService/icons/Avatar.png /var/lib/AccountsService/icons/$USER
+
+sudo rsync -a "$(realpath "$0")"/Files/ ~/
+sudo cp "$(realpath "$0")"/Files/Pictures/Avatar.png /var/lib/AccountsService/icons/$USER
 sudo mv /var/lib/AccountsService/icons/Avatar.png /var/lib/AccountsService/icons/$USER
+
+dirname "$(realpath "$0")"
 
 clear
 echo "// Updating The System"
