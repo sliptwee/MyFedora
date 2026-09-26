@@ -30,8 +30,6 @@ echo
 
 sudo rsync -a "$(realpath "$0")"/Files/ ~/
 
-dirname "$(realpath "$0")"
-
 clear
 echo "// Updating The System"
 echo
