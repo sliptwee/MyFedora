@@ -59,7 +59,7 @@ clear
 echo "// Installing DNF Packages"
 echo
 
-sudo dnf install wget btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri -y
+sudo dnf install wget btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri noctalia kitty -y
 
 clear
 echo "// Installing RPM Packages"
