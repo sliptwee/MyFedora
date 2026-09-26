@@ -7,12 +7,12 @@ echo
 sudo -v
 
 clear
-echo "// Make Sure To Turn On Your VPN Before Proceeding! (Press Enter To Continue)"
+echo "// Make Sure You Have Unrestricted Internet Before Proceeding! (Press Enter To Continue)"
 echo
 
 read
 
-echo
+clear
 echo "// Making Backup (~/Backup)"
 echo
 
@@ -28,13 +28,7 @@ clear
 echo "// Copying Custom Configurations"
 echo
 
-# sudo rsync -a ~/Downloads/MyFedora-main/Files/ ~/
-# sudo cp ~/Downloads/MyFedora-main/Files/Pictures/Avatar.png /var/lib/AccountsService/icons/
-# sudo mv /var/lib/AccountsService/icons/Avatar.png /var/lib/AccountsService/icons/$USER
-
 sudo rsync -a "$(realpath "$0")"/Files/ ~/
-sudo cp "$(realpath "$0")"/Files/Pictures/Avatar.png /var/lib/AccountsService/icons/$USER
-sudo mv /var/lib/AccountsService/icons/Avatar.png /var/lib/AccountsService/icons/$USER
 
 dirname "$(realpath "$0")"
 

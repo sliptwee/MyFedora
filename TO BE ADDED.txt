@@ -1,1 +1,0 @@
-add flatpak config & others, possibly vscode extensions
