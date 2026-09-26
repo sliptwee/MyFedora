@@ -160,7 +160,7 @@ polkit_agent = true
 
 [theme]
 community_palette = "Monochrome"
-custom_palette = "Monochrome customized"
+custom_palette = "Monochrome Custom"
 mode = "dark"
 source = "custom"
 wallpaper_scheme = "m3-monochrome"
@@ -170,13 +170,13 @@ directory = "/home/tema/.config/Wallpapers"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/tema/Downloads/wallhaven-1qdjv1.jpg"
+    path = "~/.config/Wallpapers/wallhaven-1qdjv1.jpg"
 
     [wallpaper.last]
-    path = "/home/tema/Downloads/wallhaven-1qdjv1.jpg"
+    path = "~/.config/Wallpapers/wallhaven-1qdjv1.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/tema/Downloads/wallhaven-1qdjv1.jpg"
+    path = "~/.config/Wallpapers/wallhaven-1qdjv1.jpg"
 
 [weather]
 refresh_minutes = 15
