@@ -59,8 +59,7 @@ clear
 echo "// Installing DNF Packages"
 echo
 
-sudo dnf install wget btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri speedtest -y
-sudo dnf group install virtualization -y
+sudo dnf install wget btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri -y
 
 clear
 echo "// Installing RPM Packages"
