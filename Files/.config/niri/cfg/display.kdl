@@ -1,71 +1,13 @@
 blur {
     passes 3
 }
-
 output "eDP-1" {
     mode "2160x1350@59.744"
     scale 1.5
     transform "normal"
     position x=-1440 y=91
 }
-
 output "DP-1" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-2" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-3" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-4" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-5" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-6" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-7" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-8" {
-    mode "1920x1080@143.855"
-    scale 1.0
-    transform "normal"
-    position x=0 y=0
-}
-
-output "DP-9" {
     mode "1920x1080@143.855"
     scale 1.0
     transform "normal"

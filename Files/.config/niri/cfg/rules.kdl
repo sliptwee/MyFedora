@@ -2,12 +2,10 @@ layer-rule {
   match namespace="^noctalia-backdrop"
   place-within-backdrop true
 }
-
 layer-rule {
   match namespace="^noctalia-panel"
   opacity 0.7
 }
-
 window-rule {
     draw-border-with-background false
     opacity 0.7
@@ -15,30 +13,22 @@ window-rule {
         blur true
     }
 }
-
 window-rule {
     match is-focused=true
     background-effect {
         blur true
     }
 }
-
-// --- Default Niri Steam stuff ---
-
     window-rule {
         match app-id="steam"
         exclude title=r"^[Ss]team$"
         open-floating true
 }
-
     window-rule {
        match app-id="steam" title=r"^notificationtoasts_\d+_desktop$"
        default-floating-position x=10 y=10 relative-to="bottom-right"
        open-focused false
 }
-
-// --------------------------------
-
 window-rule { match app-id=r"vlc"; opacity 1.0; }
 window-rule { match app-id=r"helium"; opacity 1.0; }
 window-rule { match app-id=r"org.vinegarhq.Sober"; opacity 1.0; }
