@@ -36,6 +36,7 @@ window-rule { match app-id=r"io.github.diegopvlk.Cine"; opacity 1.0; }
 window-rule { match app-id=r"zen"; opacity 1.0; }
 window-rule { match app-id=r"com.infinipaint.infinipaint"; opacity 1.0; }
 window-rule { match app-id=r"org.gnome.Boxes"; opacity 1.0; }
+window-rule { match app-id=r"org.gnome.Papers"; opacity 1.0; }
 window-rule { match app-id=r"org.gnome.ColorProfileViewer"; opacity 1.0; }
 window-rule { match app-id=r"org.gnome.Connections"; opacity 1.0; }
 window-rule { match app-id=r"org.gnome.Loupe"; opacity 1.0; }
