@@ -40,7 +40,7 @@ clear
 echo "// Debloating And Configuring Fedora"
 echo
 
-sudo dnf install gnome-shell-extension-appindicator adw-gtk3-theme git -y
+sudo dnf install gnome-shell-extension-appindicator adw-gtk3-theme -y
 sudo dnf remove gnome-contacts mediawriter gnome-maps gnome-font-viewer malcontent-control gnome-tour yelp -y
 
 gsettings set org.gnome.shell enabled-extensions "['appindicatorsupport@rgcjonas.gmail.com']"
@@ -59,7 +59,7 @@ clear
 echo "// Installing DNF Packages"
 echo
 
-sudo dnf install wget btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri noctalia kitty -y
+sudo dnf install wget git btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri noctalia kitty -y
 
 clear
 echo "// Done! The System Will Reboot in 5 Seconds..."
