@@ -40,7 +40,7 @@ clear
 echo "// Debloating And Configuring Fedora"
 echo
 
-sudo dnf install gnome-shell-extension-appindicator adw-gtk3-theme -y
+sudo dnf install gnome-shell-extension-appindicator adw-gtk3-theme git -y
 sudo dnf remove gnome-contacts mediawriter gnome-maps gnome-font-viewer malcontent-control gnome-tour yelp -y
 
 gsettings set org.gnome.shell enabled-extensions "['appindicatorsupport@rgcjonas.gmail.com']"

@@ -13,5 +13,4 @@ alias upd='sudo pacman -Syu && paru -Syu'
 PS1='\W > '
 
 clear
-fastfetch --config /home/tema/.config/fastfetch/config.jsonc
-. "$HOME/.local/bin/env"
+fastfetch --config ~/.config/fastfetch/config.jsonc

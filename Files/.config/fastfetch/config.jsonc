@@ -1,7 +1,7 @@
 {
   "logo": {
     "type": "file",
-    "source": "/home/tema/.config/fastfetch/ASCII/Tema.txt",
+    "source": "~/.config/fastfetch/ASCII/Tema.txt",
     "color": {
       "1": "#FFFFFF"
     },
