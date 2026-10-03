@@ -1,9 +1,3 @@
-workspace "Main" {
-    open-on-output "eDP-1"
-}
-workspace "Study" {
-    open-on-output "eDP-1"
-}
 layout {
     gaps 10
     center-focused-column "never"

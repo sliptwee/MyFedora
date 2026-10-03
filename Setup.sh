@@ -7,7 +7,7 @@ echo
 sudo -v
 
 clear
-echo "// Make Sure You Have Unrestricted Internet Before Proceeding! (Press Enter To Continue)"
+echo "// Make Sure You Have Unrestricted Internet Access Before Proceeding! (Press Enter To Continue)"
 echo
 
 read
