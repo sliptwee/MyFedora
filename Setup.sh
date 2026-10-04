@@ -63,6 +63,18 @@ echo
 sudo dnf install wget git btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri noctalia kitty -y
 
 clear
+echo "// Adding XDG Directories Bookmarks"
+echo
+
+touch ~/.config/gtk-3.0/bookmarks
+echo file:///home/$USER/Projects Projects >> ~/.config/gtk-3.0/bookmarks
+echo file:///home/$USER/Documents Documents >> ~/.config/gtk-3.0/bookmarks
+echo file:///home/$USER/Downloads Downloads >> ~/.config/gtk-3.0/bookmarks
+echo file:///home/$USER/Music Music >> ~/.config/gtk-3.0/bookmarks
+echo file:///home/$USER/Pictures Pictures >> ~/.config/gtk-3.0/bookmarks
+echo file:///home/$USER/Videos Videos >> ~/.config/gtk-3.0/bookmarks
+
+clear
 echo "// Done! The System Will Reboot in 5 Seconds..."
 echo
 
