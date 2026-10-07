@@ -30,14 +30,25 @@ enabled = false
 [idle]
 pre_action_fade_seconds = 0
 
+[location]
+address = "Saint Petersburg, Russia"
+
 [lockscreen]
 blur_intensity = 0.99999997764825821
+monitors = [ "eDP-1", "DP-8" ]
 tint_intensity = 0.44999998994171619
+transition = [ "zoom" ]
+transition_duration = 1000
 
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-8", "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
+widget_order = [
+    "lockscreen-login-box@DP-9",
+    "lockscreen-login-box@DP-8",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -45,10 +56,11 @@ widget_order = [ "lockscreen-login-box@DP-8", "lockscreen-login-box@eDP-1", "loc
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@DP-8"]
-    box_height = 196.0
-    box_width = 810.0
+    box_height = 70.0
+    box_width = 256.0
     cx = 960.0
-    cy = 898.0
+    cy = 1020.0
+    enabled = false
     output = "DP-8"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -56,6 +68,33 @@ widget_order = [ "lockscreen-login-box@DP-8", "lockscreen-login-box@eDP-1", "loc
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-8".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "compact"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-9"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "DP-9"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-9".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -128,6 +167,9 @@ offset_y = 20
 background_opacity = 0.69999998435378075
 offset_y = 20
 
+    [osd.kinds]
+    media = false
+
 [shell]
 corner_radius_scale = 0.40000000596046448
 font_family = "Maple Mono"
@@ -158,6 +200,9 @@ polkit_agent = true
     wallpaper_placement = "floating"
     wallpaper_position = "center"
 
+    [shell.screenshot]
+    annotate = true
+
 [theme]
 community_palette = "Monochrome"
 custom_palette = "Monochrome Custom"
@@ -170,13 +215,13 @@ directory = "/home/tema/.config/Wallpapers"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "~/.config/Wallpapers/wallhaven-1qdjv1.jpg"
+    path = "/home/tema/.config/Wallpapers/wallhaven-1qdjv1.jpg"
 
     [wallpaper.last]
-    path = "~/.config/Wallpapers/wallhaven-1qdjv1.jpg"
+    path = "/home/tema/.config/Wallpapers/wallhaven-1qdjv1.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "~/.config/Wallpapers/wallhaven-1qdjv1.jpg"
+    path = "/home/tema/.config/Wallpapers/wallhaven-1qdjv1.jpg"
 
 [weather]
 refresh_minutes = 15
