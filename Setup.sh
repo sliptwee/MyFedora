@@ -60,7 +60,7 @@ clear
 echo "// Installing DNF Packages"
 echo
 
-sudo dnf install wget git btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri noctalia kitty -y
+sudo dnf install wget git btop fastfetch gnome-shell-extension-appindicator gnome-tweaks niri noctalia kitty brightnessctl -y
 
 clear
 echo "// Adding XDG Directories Bookmarks"
