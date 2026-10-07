@@ -67,6 +67,7 @@ echo "// Adding XDG Directories Bookmarks"
 echo
 
 mkdir ~/Projects
+rm ~/.config/gtk-3.0/bookmarks
 touch ~/.config/gtk-3.0/bookmarks
 echo file:///home/$USER/Projects Projects >> ~/.config/gtk-3.0/bookmarks
 echo file:///home/$USER/Documents Documents >> ~/.config/gtk-3.0/bookmarks
