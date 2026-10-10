@@ -11,7 +11,7 @@ Notes:
 
 animations {
     // Uncomment while tuning.
-    slowdown 1.25
+    slowdown 1
 
 
     window-open {

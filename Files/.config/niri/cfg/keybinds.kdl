@@ -1,55 +1,45 @@
 binds {
-   Mod+E                                                 { spawn "nautilus" "--new-window"; }
+   Mod+E repeat=false                                    { spawn "nautilus" "--new-window"; }
    Mod+L repeat=false                                    { spawn-sh "noctalia msg session lock"; }
-   Mod+T                                                 { spawn "kitty"; }
+   Mod+V repeat=false					                     { spawn-sh "noctalia msg panel-toggle clipboard"; }
+   Mod+T repeat=false                                    { spawn "kitty"; }
    Mod+W repeat=false                                    { spawn-sh "noctalia msg panel-toggle launcher"; }
-   Mod+S                                                 { spawn-sh "flatpak run app.zen_browser.zen"; }
-   Mod+Period                                            { spawn "gnome-characters"; }
-   Mod+V                                                 { spawn-sh "cliphist list | fuzzel --dmenu --with-nth 2 | cliphist decode | wl-copy"; }
-   Mod+ESCAPE allow-inhibiting=false                     { toggle-keyboard-shortcuts-inhibit; }
-   CTRL+ALT+Delete                                       { quit; }
-   ALT+TAB						 { spawn-sh "noctalia msg window-switcher"; }
-   Print                                                 { screenshot; }
+   Mod+S repeat=false                                    { spawn-sh "flatpak run app.zen_browser.zen"; }
+   Mod+Period repeat=false                               { spawn "gnome-characters"; }
+   Mod+Escape allow-inhibiting=false                     { toggle-keyboard-shortcuts-inhibit; }
+   Alt+tab						                              { spawn-sh "noctalia msg window-switcher"; }
+   Ctrl+Shift+Escape repeat=false			               { spawn-sh "kitty -- btop"; }
+   Print repeat=false                                    { screenshot; }
    F11 repeat=false                                      { fullscreen-window; }
    Mod+Shift+P                                           { power-off-monitors; }
-   Mod+O repeat=false                                    { toggle-overview; }
    Mod+Q                                                 { close-window; }
-   Mod+F                                                 { maximize-window-to-edges; }
-   Mod+K repeat=false                                    { toggle-window-floating; }
+   Mod+F repeat=false                                    { maximize-window-to-edges; }
+   Mod+Z repeat=false 				                        { spawn-sh "niri msg action set-column-width '100%' && niri msg action set-window-height '100%'"; }
+   Mod+C repeat=false 					                     { toggle-window-floating; }
    Mod+D repeat=false                                    { focus-column-right; }
    Mod+A repeat=false                                    { focus-column-left; }
-   Mod+Home                                              { focus-column-first; }
-   Mod+End                                               { focus-column-last; }
-   Mod+CTRL+Home                                         { move-column-to-first; }
-   Mod+CTRL+End                                          { move-column-to-last; }
-   Mod+WheelScrollDown cooldown-ms=150                   { focus-workspace-down; }
-   Mod+WheelScrollUp cooldown-ms=150                     { focus-workspace-up; }
-   Mod+CTRL+WheelScrollDown cooldown-ms=150              { move-column-to-workspace-down; }
-   Mod+CTRL+WheelScrollUp cooldown-ms=150                { move-column-to-workspace-up; }
+   Mod+WheelScrollDown			                           { focus-workspace-down; }
+   Mod+WheelScrollUp                 			            { focus-workspace-up; }
+   Mod+Ctrl+WheelScrollDown         			            { move-column-to-workspace-down; }
+   Mod+Ctrl+WheelScrollUp              		          	{ move-column-to-workspace-up; }
    Mod+WheelScrollRight                                  { focus-column-right; }
    Mod+WheelScrollLeft                                   { focus-column-left; }
-   Mod+CTRL+WheelScrollRight                             { move-column-right; }
-   Mod+CTRL+WheelScrollLeft                              { move-column-left; }
+   Mod+Ctrl+WheelScrollRight                             { move-column-right; }
+   Mod+Ctrl+WheelScrollLeft                              { move-column-left; }
    Mod+Shift+WheelScrollDown                             { focus-column-right; }
    Mod+Shift+WheelScrollUp                               { focus-column-left; }
-   Mod+CTRL+Shift+WheelScrollDown                        { move-column-right; }
-   Mod+CTRL+Shift+WheelScrollUp                          { move-column-left; }
-   Mod+1                                                 { focus-workspace 1; }
-   Mod+2                                                 { focus-workspace 2; }
-   Mod+3                                                 { focus-workspace 3; }
-   Mod+4                                                 { focus-workspace 4; }
-   Mod+5                                                 { focus-workspace 5; }
-   Mod+6                                                 { focus-workspace 6; }
-   Mod+7                                                 { focus-workspace 7; }
-   Mod+8                                                 { focus-workspace 8; }
-   Mod+9                                                 { focus-workspace 9; }
-   Mod+C                                                 { center-column; }
-   Mod+CTRL+C                                            { center-visible-columns; }
-   Mod+Minus                                             { set-column-width "-10%"; }
-   Mod+Equal                                             { set-column-width "+10%"; }
-   Mod+Shift+Minus                                       { set-window-height "-10%"; }
-   Mod+Shift+Equal                                       { set-window-height "+10%"; }
-
+   Mod+Ctrl+Shift+WheelScrollDown                        { move-column-right; }
+   Mod+Ctrl+Shift+WheelScrollUp                          { move-column-left; }
+   Mod+1 repeat=false                                    { focus-workspace 1; }
+   Mod+2 repeat=false                                    { focus-workspace 2; }
+   Mod+3 repeat=false                                    { focus-workspace 3; }
+   Mod+4 repeat=false                                    { focus-workspace 4; }
+   Mod+5 repeat=false                                    { focus-workspace 5; }
+   Mod+6 repeat=false                                    { focus-workspace 6; }
+   Mod+7 repeat=false                                    { focus-workspace 7; }
+   Mod+8 repeat=false                                    { focus-workspace 8; }
+   Mod+9 repeat=false                                    { focus-workspace 9; }
+   Mod+X repeat=false                                    { center-column; }
    XF86AudioRaiseVolume allow-when-locked=true           { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
    XF86AudioLowerVolume allow-when-locked=true           { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
    XF86AudioMute allow-when-locked=true                  { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
